@@ -1,0 +1,18 @@
+CREATE TABLE PRODUTOS (
+    ID SERIAL PRIMARY KEY,
+    Nome varchar,
+    Qtd numeric,
+    Valor numeric
+);
+
+INSERT INTO PRODUTOS (ID,Nome, Qtd, Valor) VALUES
+ (1,'Guarda-roupa 2 duas portas', 100, 80.00),
+ (2,'Mesa de Jantar', 1000, 560.00),
+ (3,'Towel Holder', 10000, 5.50),
+ (4,'Mesa de Computador', 350, 100),
+ (5,'Cadeira', 3000, 210.64),
+ (6,'Cama de Solteiro',750,99.00);
+
+SSELECT ID, Nome
+FROM PRODUTOS
+WHERE Valor < 10 OR Valor > 100;
