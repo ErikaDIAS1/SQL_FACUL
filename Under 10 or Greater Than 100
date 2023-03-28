@@ -13,6 +13,6 @@ INSERT INTO PRODUTOS (ID,Nome, Qtd, Valor) VALUES
  (5,'Cadeira', 3000, 210.64),
  (6,'Cama de Solteiro',750,99.00);
 
-SSELECT ID, Nome
+SELECT ID, Nome
 FROM PRODUTOS
-WHERE Qtd < 10 OR Valor > 100;
+WHERE Valor < 10 OR Valor > 100;
